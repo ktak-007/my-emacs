@@ -45,4 +45,7 @@
   indent-guide
   :config (indent-guide-global-mode 1))
 
+;; Auto fill new file with some content
+(auto-insert-mode t)
+
 ;;; personal.el ends here
