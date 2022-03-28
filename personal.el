@@ -25,7 +25,7 @@
 (setq-default save-place t) ;; Помнить, где был курсор в прошлый раз
 
 (global-hl-line-mode 1) ;;; Подсветка текущей строки
-(global-linum-mode 1)   ;;; Показывать номера строк всегда
+(add-hook 'find-file-hook 'linum-mode) ;; Show line numbers on opened files
 
 ;;; Умные скобочки
 (use-package
