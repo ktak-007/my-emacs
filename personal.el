@@ -45,9 +45,4 @@
   indent-guide
   :config (indent-guide-global-mode 1))
 
-;;; Дерево отмены
-(use-package
-  undo-tree
-  :config (global-undo-tree-mode 1))
-
 ;;; personal.el ends here
