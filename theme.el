@@ -1,6 +1,6 @@
 ;;; Package --- Summary
 ;;; Commentary:
-;;; User settings for .emacs
+;;; Theme settings
 
 ;;; Code:
 
