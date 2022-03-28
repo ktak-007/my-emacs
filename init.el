@@ -1,4 +1,4 @@
-;;; package --- Summary
+;;; init.el --- Summary
 ;;; Commentary:
 ;;; Main EMACS settings file, load settings from parts.
 
