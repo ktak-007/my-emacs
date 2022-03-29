@@ -49,4 +49,6 @@
 (auto-insert-mode t)
 (fset 'yes-or-no-p 'y-or-n-p) ;;; Understand y and n instead of yes and no
 
+(scroll-bar-mode -1) ;; Scrollbars off
+
 ;;; personal.el ends here
