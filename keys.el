@@ -15,9 +15,15 @@
 (global-set-key (kbd "C-<f7>") 'replace-regexp)
 
 ;; Other keys
+(defun my-kill-buffer ()
+  (interactive)
+  (kill-buffer (current-buffer)))
+
 (global-set-key (kbd "<f12>") 'my-kill-buffer)
+
 (global-set-key (kbd "M-g") 'goto-line)
 (global-set-key (kbd "A-g") 'goto-line)
+
 (global-set-key (kbd "<M-up>") 'windmove-up)
 (global-set-key (kbd "<M-down>") 'windmove-down)
 (global-set-key (kbd "<M-right>") 'windmove-right)
