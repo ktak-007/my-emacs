@@ -47,5 +47,6 @@
 
 ;; Auto fill new file with some content
 (auto-insert-mode t)
+(fset 'yes-or-no-p 'y-or-n-p) ;;; Understand y and n instead of yes and no
 
 ;;; personal.el ends here
