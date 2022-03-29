@@ -43,6 +43,7 @@
 			"jenkins.el"
 			"keys.el"
 			"neotree.el"
+			"minimap.el"
 			"backups.el"))
 
 ;;; .emacs ends here
