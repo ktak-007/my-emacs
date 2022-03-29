@@ -47,4 +47,9 @@
 (global-set-key [A-down] 'my-next-line)
 (global-set-key [A-up] 'my-previous-line)
 
+;; On Home key jump to start of code and on second press jump to start of line
+(use-package mwim
+  :config
+  (global-set-key [home] 'mwim-beginning))
+
 ;;; borland-keys.el ends here
