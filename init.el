@@ -41,6 +41,7 @@
 			"personal.el"
 			"markdown.el"
 			"jenkins.el"
+			"borland-keys.el"
 			"backups.el"))
 
 ;;; .emacs ends here
