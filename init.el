@@ -41,7 +41,7 @@
 			"personal.el"
 			"markdown.el"
 			"jenkins.el"
-			"borland-keys.el"
+			"keys.el"
 			"neotree.el"
 			"backups.el"))
 
