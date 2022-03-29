@@ -40,6 +40,7 @@
 (mapc 'load-user-file '("theme.el"
 			"personal.el"
 			"markdown.el"
+			"jenkins.el"
 			"backups.el"))
 
 ;;; .emacs ends here
