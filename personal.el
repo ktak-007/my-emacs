@@ -22,7 +22,7 @@
 
 (setq column-number-mode 1) ;; Номера строк слева
 
-(setq-default save-place t) ;; Помнить, где был курсор в прошлый раз
+(save-place-mode 1) ;; Remember the cursor position
 
 (global-hl-line-mode 1) ;;; Подсветка текущей строки
 (add-hook 'find-file-hook 'linum-mode) ;; Show line numbers on opened files
