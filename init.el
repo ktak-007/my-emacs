@@ -42,6 +42,7 @@
 			"markdown.el"
 			"jenkins.el"
 			"borland-keys.el"
+			"neotree.el"
 			"backups.el"))
 
 ;;; .emacs ends here
