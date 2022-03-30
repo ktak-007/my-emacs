@@ -5,8 +5,8 @@
 ;;; Code:
 
 ;; Тёмная тема darcula как в Jetbrains
-(use-package jetbrains-darcula-theme
+(use-package idea-darkula-theme
   :config
-  (load-theme 'jetbrains-darcula t))
+  (load-theme 'idea-darkula t))
 
 ;;; theme.el ends here
