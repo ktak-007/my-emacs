@@ -44,6 +44,7 @@
 			"keys.el"
 			"neotree.el"
 			"minimap.el"
+			"folding.el"
 			"backups.el"))
 
 ;;; .emacs ends here
