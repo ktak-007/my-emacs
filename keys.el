@@ -51,4 +51,18 @@
   :config
   (global-set-key [home] 'mwim-beginning))
 
+;; Comment line or region on C-/
+(defun my-comment-line-or-region ()
+  "Comment region if active. If not, comment line"
+  (interactive)
+  (if (use-region-p)
+      (comment-region (region-beginning) (region-end))
+    (comment-line (line-number-at-pos))))
+
+(define-key input-decode-map 
+    (kbd "C-/") 
+    [my-control-slash])
+
+(global-set-key [my-control-slash] 'my-comment-line-or-region)
+
 ;;; borland-keys.el ends here
