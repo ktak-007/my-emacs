@@ -65,4 +65,12 @@
 
 (global-set-key [my-control-slash] 'my-comment-line-or-region)
 
+;; Text scaling
+(define-key input-decode-map
+  (kbd "C-_")
+  [my-control-underscore])
+
+(global-set-key [my-control-underscore] 'text-scale-decrease)
+(global-set-key (kbd "C-+") 'text-scale-increase)
+
 ;;; borland-keys.el ends here
