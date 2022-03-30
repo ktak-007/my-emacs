@@ -27,14 +27,6 @@
 (global-hl-line-mode 1) ;;; Подсветка текущей строки
 (add-hook 'find-file-hook 'linum-mode) ;; Show line numbers on opened files
 
-;;; Умные скобочки
-(use-package
-  smartparens
-  :config (smartparens-global-mode 1))
-
-;; Electric pair mode
-(electric-pair-mode 1)
-
 ;; Иконки в статус-баре
 (use-package
   mode-icons

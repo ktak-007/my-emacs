@@ -45,6 +45,7 @@
 			"neotree.el"
 			"minimap.el"
 			"folding.el"
+			"parens.el"
 			"backups.el"))
 
 (use-package ini-mode)
