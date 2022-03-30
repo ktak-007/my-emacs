@@ -51,4 +51,10 @@
 
 (scroll-bar-mode -1) ;; Scrollbars off
 
+;; Some fonts
+(set-face-font 'default "Fira Code-14")
+(set-face-font 'mode-line "Fira Code-10")
+(eval-after-load "linum"
+  '(set-face-attribute 'linum nil :height 100))
+
 ;;; personal.el ends here
