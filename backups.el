@@ -16,7 +16,7 @@
 (use-package undo-tree
   :config
   (global-undo-tree-mode 1)
-  (setq undo-tree-history-directory-alist
-	'(("." . "~/.emacs.d/auto-save-list"))))    ; don't litter my fs tree
+  (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/auto-save-list"))) ; don't litter my fs tree
+  (global-set-key "\C-z" 'undo-tree-visualize))
 
 ;;; backups.el ends here
