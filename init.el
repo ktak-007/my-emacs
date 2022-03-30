@@ -47,4 +47,6 @@
 			"folding.el"
 			"backups.el"))
 
+(use-package ini-mode)
+
 ;;; .emacs ends here
