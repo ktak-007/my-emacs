@@ -4,15 +4,20 @@
 
 ;;; Code:
 
-(add-hook 'prog-mode-hook 'hs-minor-mode)
+(setq excluded-modes '(ini-mode))
 
-(defun my-hide-block ()
+(defun my-hs-minor-mode ()
+  (unless (member major-mode excluded-modes)
+    (progn (hs-minor-mode)
+	   (local-set-key [f4] 'my-hs-hide-block)
+	   (local-set-key [S-f4] 'hs-show-block))))
+
+(add-hook 'prog-mode-hook 'my-hs-minor-mode)
+
+(defun my-hs-hide-block ()
   (interactive)
   (save-excursion
     (end-of-line)
     (hs-hide-block)))
-
-(global-set-key [f4] 'my-hide-block)
-(global-set-key [S-f4] 'hs-show-block)
 
 ;;; folding.el ends here
