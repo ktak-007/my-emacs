@@ -46,6 +46,7 @@
 			"minimap.el"
 			"folding.el"
 			"parens.el"
+			"color-code.el"
 			"backups.el"))
 
 (use-package ini-mode)
