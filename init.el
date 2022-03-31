@@ -50,5 +50,6 @@
 			"backups.el"))
 
 (use-package ini-mode)
+(use-package fish-mode)
 
 ;;; .emacs ends here
