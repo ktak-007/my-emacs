@@ -49,7 +49,9 @@
 			"color-code.el"
 			"backups.el"))
 
+;; Enable various modes
 (use-package ini-mode)
 (use-package fish-mode)
+(use-package yaml-mode)
 
 ;;; .emacs ends here
