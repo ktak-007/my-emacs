@@ -1,4 +1,4 @@
-;;; borland-keys.el --- Borland-like keys            -*- lexical-binding: t; -*-
+;;; keys.el --- Various hot keys            -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Stanislav Smirnov
 
@@ -51,19 +51,12 @@
   :config
   (global-set-key [home] 'mwim-beginning))
 
-;; Comment line or region on C-/
-(defun my-comment-line-or-region ()
-  "Comment region if active. If not, comment line"
-  (interactive)
-  (if (use-region-p)
-      (comment-region (region-beginning) (region-end))
-    (comment-line (line-number-at-pos))))
-
+;; (un)Comment line or region on C-/
 (define-key input-decode-map 
     (kbd "C-/") 
     [my-control-slash])
 
-(global-set-key [my-control-slash] 'my-comment-line-or-region)
+(global-set-key [my-control-slash] 'comment-line)
 
 ;; Text scaling
 (define-key input-decode-map
