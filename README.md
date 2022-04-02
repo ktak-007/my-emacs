@@ -10,7 +10,7 @@ The idea of the config structure is taken from the [article](https://dunmaksim.b
 
 ## Emacs distribution
 
-You can simply use this config apart from you config by using the [emacs-distribution script](http://www.emacswiki.org/emacs/emacs-distribution).
+You can simply use this config apart from your config by using the [emacs-distribution script](http://www.emacswiki.org/emacs/emacs-distribution).
 
 First init:
 > emacs-distributions ktakEmacs --clone="git@github.com:ktak-007/my-emacs.git"
