@@ -1,5 +1,9 @@
 # My Emacs config
 
+## Current example
+
+![Screenshot](/Screenshot_20220402_145204.png)
+
 ## Use-package
 
 The idea of the config structure is taken from the [article](https://dunmaksim.blogspot.com/2017/07/emacs-use-package.html).
