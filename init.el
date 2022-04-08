@@ -55,5 +55,6 @@
 (use-package fish-mode)
 (use-package yaml-mode)
 (use-package nix-mode)
+(use-package php-mode)
 
 ;;; .emacs ends here
