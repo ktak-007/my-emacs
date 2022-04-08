@@ -53,5 +53,6 @@
 (use-package ini-mode)
 (use-package fish-mode)
 (use-package yaml-mode)
+(use-package nix-mode)
 
 ;;; .emacs ends here
