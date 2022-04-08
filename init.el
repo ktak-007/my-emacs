@@ -47,6 +47,7 @@
 			"folding.el"
 			"parens.el"
 			"color-code.el"
+			"org.el"
 			"backups.el"))
 
 ;; Enable various modes
