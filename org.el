@@ -30,8 +30,10 @@
 			  " ┄┄┄┄┄ " "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄")
    org-agenda-current-time-string "⭠ now ─────────────────────────────────────────────────")
 
-  ;; Enable org-modern-mode
-  (add-hook 'org-mode-hook #'org-modern-mode)
+  ;; Enable org-modern-mode with intendations
+  (add-hook 'org-mode-hook (lambda ()
+			     (org-modern-mode)
+			     (org-indent-mode t)))
   (add-hook 'org-agenda-finalize-hook #'org-modern-agenda))
 
 ;;; org.el ends here
