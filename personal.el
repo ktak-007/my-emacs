@@ -49,7 +49,7 @@
 (eval-after-load "linum"
   '(set-face-attribute 'linum nil :height 100))
 
-;; Highlight empty lines after the end of file.
-(setq-default indicate-empty-lines t)
+;; Highlight empty lines after the end of file in prog modes.
+(add-hook 'prog-mode-hook (lambda () (setq indicate-empty-lines t)))
 
 ;;; personal.el ends here
