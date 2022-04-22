@@ -56,5 +56,6 @@
 (use-package yaml-mode)
 (use-package nix-mode)
 (use-package php-mode)
+(use-package dockerfile-mode)
 
 ;;; .emacs ends here
