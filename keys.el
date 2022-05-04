@@ -7,7 +7,7 @@
 ;; Borland's IDEs like keys
 (global-set-key [f2] 'save-buffer)
 (global-set-key [f3] 'find-file)
-(global-set-key [f5] (lambda () (interactive) (progn (delete-other-windows) (demap-open))))
+(global-set-key [f5] 'my-minimap-refresh)
 (global-set-key [f6] 'other-window)
 (global-set-key (kbd "<f7>") 'nonincremental-re-search-forward)
 (global-set-key (kbd "S-<f7>") 'nonincremental-repeat-search-forward)
