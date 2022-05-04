@@ -26,6 +26,7 @@
 
 (global-hl-line-mode 1) ;;; Подсветка текущей строки
 (add-hook 'find-file-hook 'linum-mode) ;; Show line numbers on opened files
+(setq linum-format "%4d") ;; fill more spaces left to numbers
 
 ;; Иконки в статус-баре
 (use-package
@@ -51,5 +52,8 @@
 
 ;; Highlight empty lines after the end of file in prog modes.
 (add-hook 'prog-mode-hook (lambda () (setq indicate-empty-lines t)))
+
+(setq-default frame-title-format '("%f [%m]")
+	      show-trailing-whitespace 't)
 
 ;;; personal.el ends here
