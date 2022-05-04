@@ -5,9 +5,9 @@
 ;;; Code:
 
 ;;; Цветные скобочки
-(use-package
-  rainbow-delimiters
-  :init (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(use-package rainbow-delimiters
+  :init
+  (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
   (setq rainbow-delimiters-max-face-count 9))
 
 ;;; Scrolling
