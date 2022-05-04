@@ -4,10 +4,10 @@
 
 ;;; Code:
 
-;; Тёмная тема darcula как в Jetbrains
-(use-package idea-darkula-theme
+;; Тёмная тема
+(use-package fantom-theme
   :config
-  (load-theme 'idea-darkula t)
+  (load-theme 'fantom t)
   (eval-after-load "linum"
     '(set-face-foreground 'linum "#465a61")))
 
