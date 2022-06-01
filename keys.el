@@ -66,4 +66,7 @@
 (global-set-key [my-control-underscore] 'text-scale-decrease)
 (global-set-key (kbd "C-+") 'text-scale-increase)
 
+;; Show pretty buffer list
+(global-set-key "\C-x\C-b" 'bs-show)
+
 ;;; borland-keys.el ends here
