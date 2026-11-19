@@ -8,13 +8,16 @@
 
 ;;; Code:
 
-(use-package demap
+(use-package minimap
+  :ensure t
+  :demand t
+  :custom
+  (minimap-window-location 'right)
+  (minimap-minimum-width 10)
+  (minimap-hide-fringes t)
+  (minimap-major-modes '(prog-mode))
+  ;;(minimap-excluded-modes '(lisp-interaction-mode))
   :config
-  (add-hook 'prog-mode-hook 'demap-open))
-
-(defun my-minimap-refresh ()
-  (interactive)
-  (progn (delete-other-windows)
-	 (when (derived-mode-p 'prog-mode) (demap-open)))) ;; Refresh and restore minimap on window resize
+  (minimap-mode 1))
 
 ;;; minimap.el ends here
