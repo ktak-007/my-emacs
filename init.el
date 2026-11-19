@@ -4,6 +4,8 @@
 
 ;;; Code:
 
+(setq inhibit-startup-screen t)
+
 (require 'package)
 
 ;; Расширим список доступных пакетов
