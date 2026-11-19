@@ -41,6 +41,7 @@
 
 (mapc 'load-user-file '("theme.el"
 			"personal.el"
+			"magit.el"
 			"markdown.el"
 			"jenkins.el"
 			"keys.el"
