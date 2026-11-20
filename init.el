@@ -62,4 +62,7 @@
 (use-package dockerfile-mode)
 (use-package json-mode)
 
+;; usefull tools
+(use-package ag)
+
 ;;; .emacs ends here

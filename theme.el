@@ -5,10 +5,14 @@
 ;;; Code:
 
 ;; Тёмная тема
-(use-package fantom-theme
+(use-package ef-themes
   :config
-  (load-theme 'fantom t)
-  (eval-after-load "linum"
-    '(set-face-foreground 'linum "#465a61")))
+  (load-theme 'ef-night :no-confirm)
+  (setq ef-themes-mode-line '(accented borderless))
+  (with-eval-after-load 'display-line-numbers
+    (set-face-foreground 'line-number "#465a61")))
+
+(use-package powerline
+  :init (powerline-default-theme))
 
 ;;; theme.el ends here
