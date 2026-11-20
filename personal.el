@@ -28,10 +28,9 @@
 (add-hook 'find-file-hook 'linum-mode) ;; Show line numbers on opened files
 (setq linum-format "%4d") ;; fill more spaces left to numbers
 
-;; Иконки в статус-баре
-(use-package
-  mode-icons
-  :config (mode-icons-mode 1))
+;; Иконки в статус-баре (вызывают увеличение mode-line при мелких шрифтах)
+;; (use-package mode-icons
+;;   :config (mode-icons-mode 1))
 
 ;; Показывать отступы во всех режимах
 (use-package

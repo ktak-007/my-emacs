@@ -12,7 +12,7 @@
   (with-eval-after-load 'display-line-numbers
     (set-face-foreground 'line-number "#465a61")))
 
-(use-package powerline
-  :init (powerline-default-theme))
+;; (use-package powerline
+;;   :init (powerline-default-theme))
 
 ;;; theme.el ends here
