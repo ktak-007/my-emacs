@@ -45,12 +45,13 @@
 			"markdown.el"
 			"jenkins.el"
 			"keys.el"
-			"neotree.el"
+			;; "neotree.el"
 			"minimap.el"
 			"folding.el"
 			"parens.el"
 			"color-code.el"
 			"org.el"
+			"treemacs.el"
 			"backups.el"))
 
 ;; Enable various modes
