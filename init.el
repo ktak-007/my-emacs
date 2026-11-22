@@ -51,6 +51,7 @@
 			"parens.el"
 			"color-code.el"
 			"org.el"
+			"haskell.el"
 			"treemacs.el"
 			"backups.el"))
 
