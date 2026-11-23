@@ -7,7 +7,7 @@
 ;; Borland's IDEs like keys
 (global-set-key [f2] 'save-buffer)
 (global-set-key [f3] 'find-file)
-(global-set-key [f5] 'my-minimap-refresh)
+(global-set-key [f5] 'delete-other-windows)
 (global-set-key [f6] 'other-window)
 (global-set-key (kbd "<f7>") 'nonincremental-re-search-forward)
 (global-set-key (kbd "S-<f7>") 'nonincremental-repeat-search-forward)
@@ -52,8 +52,8 @@
   (global-set-key [home] 'mwim-beginning))
 
 ;; (un)Comment line or region on C-/
-(define-key input-decode-map 
-    (kbd "C-/") 
+(define-key input-decode-map
+    (kbd "C-/")
     [my-control-slash])
 
 (global-set-key [my-control-slash] 'comment-line)
