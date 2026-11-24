@@ -25,8 +25,12 @@
 (save-place-mode 1) ;; Remember the cursor position
 
 (global-hl-line-mode 1) ;;; Подсветка текущей строки
-(add-hook 'find-file-hook 'linum-mode) ;; Show line numbers on opened files
-(setq linum-format "%4d") ;; fill more spaces left to numbers
+
+(add-hook 'find-file-hook 'display-line-numbers-mode) ;; Show line numbers on opened files
+(with-eval-after-load 'display-line-numbers
+  (set-face-attribute 'line-number nil :height 100)
+  (set-face-attribute 'line-number-current-line nil :height 100)
+  (setq display-line-numbers-width 4))
 
 ;; Иконки в статус-баре (вызывают увеличение mode-line при мелких шрифтах)
 ;; (use-package mode-icons
@@ -47,8 +51,6 @@
 (set-face-font 'default "Fira Code-14")
 (set-face-font 'mode-line "Fira Code-10")
 (set-face-font 'mode-line-inactive "Fira Code-10")
-(eval-after-load "linum"
-  '(set-face-attribute 'linum nil :height 100))
 
 ;; Highlight empty lines after the end of file in prog modes.
 (add-hook 'prog-mode-hook (lambda () (setq indicate-empty-lines t)))
