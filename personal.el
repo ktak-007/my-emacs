@@ -36,10 +36,9 @@
 ;; (use-package mode-icons
 ;;   :config (mode-icons-mode 1))
 
-;; Показывать отступы во всех режимах
-(use-package
-  indent-guide
-  :config (indent-guide-global-mode 1))
+;; Показывать отступы во всех программных режимах
+(use-package indent-guide
+  :hook (prog-mode . indent-guide-mode))
 
 ;; Auto fill new file with some content
 (auto-insert-mode t)
