@@ -67,4 +67,13 @@
 ;; usefull tools
 (use-package ag)
 
+;; Highlight file changes
+(use-package diff-hl
+  :ensure t
+  :hook
+  (prog-mode . diff-hl-mode)
+  (magit-post-refresh . diff-hl-magit-post-refresh)
+  :config
+  (diff-hl-flydiff-mode 1))
+
 ;;; .emacs ends here
