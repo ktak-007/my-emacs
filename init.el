@@ -78,3 +78,4 @@
   (diff-hl-flydiff-mode 1))
 
 ;;; .emacs ends here
+(put 'scroll-left 'disabled nil)
